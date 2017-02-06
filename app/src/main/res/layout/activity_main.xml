@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.innawaylabs.android.goalgappa.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/section_padding">
+
+            <Button
+                android:id="@+id/btnPicked1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="A"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnPicked2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="B"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnPicked3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="C"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnPicked4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="D"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/btnPick1"
+                android:layout_gravity="fill"
+                android:onClick="buttonClicked"
+                android:text="G"/>
+
+            <Button
+                android:id="@+id/btnPick2"
+                android:layout_gravity="fill"
+                android:onClick="buttonClicked"
+                android:text="R"/>
+
+            <Button
+                android:id="@+id/btnPick3"
+                android:layout_gravity="fill"
+                android:onClick="buttonClicked"
+                android:text="I"/>
+
+            <Button
+                android:id="@+id/btnPick4"
+                android:layout_gravity="fill"
+                android:onClick="buttonClicked"
+                android:text="D"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="buttonClicked"
+            android:text="Submit"/>
+    </LinearLayout>
+</layout>
